@@ -8,6 +8,7 @@ public class Main {
 
         Author author1 = new Author("Александр", "Пушкин");
 
+
         System.out.println(author);
         System.out.println(author1);
 
@@ -18,5 +19,22 @@ public class Main {
         book.setTheYearOfPublishing(1972);
 
         System.out.println(book.getTheYearOfPublishing());
+
+        int m = 8;
+        int a = 8;
+        if (m == a) {
+            System.out.println("они равны");
+        }
+
+        if (author.equals(author1)) {
+            System.out.println("объекты равны");
+        } else {
+            System.out.println("объекты не равны");
+        }
+
+        System.out.println(author.hashCode());
+        System.out.println(author.hashCode());
+        System.out.println(author.hashCode());
+
     }
 }
